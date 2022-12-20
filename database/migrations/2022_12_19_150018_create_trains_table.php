@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('stazione_di_arrivo', 50);
             $table->time('orario_di_partenza')->NULL;
             $table->time('orario_di_arrivo')->NULL;
-            $table->smallInteger('codice_treno');
+            $table->string('codice_treno', 10);
             $table->tinyInteger('numero_carrozze');
             $table->tinyInteger('is_on_time')->default(1);
             $table->tinyInteger('is_cancelled')->default(0);
